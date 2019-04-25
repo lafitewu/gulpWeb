@@ -1,0 +1,10 @@
+{
+  "title": "住宅在线商家后台",
+  "charset": "utf8",
+  "lang": "en",
+  "paths":
+  {
+    "js": ["js/vendor/vendor.min.js"],
+    "css": ["css/vendor/vendor.min.css"]
+  }
+}

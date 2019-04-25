@@ -1,0 +1,24 @@
+doctype html
+html(lang=site.data.common.lang)
+block page
+  - var page = site.data.pages.index
+include _includes/_head
+
+body
+  .jumbotron(style="padding-top: 30px;padding-bottom: 30px;margin-bottom:0;background-color: #F5F5F3;")
+    .container
+      .row
+        h2 资讯改版-页面列表
+        p 资讯改版-页面列表及开发文档链接
+  .container.p-t-20
+    .list-group.row
+      - var index = 0;
+      each item,key in site.data.pages
+        if index > 0
+          a.list-group-item.col-sm-3(target="_blank",href=item.href ? item.href : key+'.html' class=item.href ? "external" : "") #{item.name}
+        - index = index + 1;
+
+include _includes/_foot
+
+
+

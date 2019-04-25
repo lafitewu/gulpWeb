@@ -1,0 +1,48 @@
+.alertify-logs{
+  z-index: 99999;
+}
+.alertify-logs.center{
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    margin-left: -62px;
+    margin-top: -30px;
+}
+
+.alertify-logs>.show{
+  padding: 15px 30px 15px 50px;
+  position: relative;
+  &:before{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    font-size: 24px;
+  }
+}
+
+
+.alertify-logs>.show{
+  &.error:before{
+    content: "\e6c7";
+  }
+}
+
+.alertify-logs>.show{
+  &.success:before{
+    content: "\e6c5";
+    font-size: 26px;
+    top: 4px;
+  }
+}
+
+.alertify-logs>.show{
+  &.default:before{
+    content: "\e6c6";
+  }
+}

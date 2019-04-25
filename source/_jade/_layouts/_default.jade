@@ -1,0 +1,13 @@
+doctype html
+html(lang=site.data.common.lang)
+  block page
+  include ../_includes/_head
+  body(class= page.body_class ?  '#{page.body_class}' : '')
+    //- block ad_section
+    include ../_includes/_header
+    block body
+    include ../_includes/_footer
+    include ../_includes/_foot
+
+
+

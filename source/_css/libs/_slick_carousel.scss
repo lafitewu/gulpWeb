@@ -1,0 +1,165 @@
+  @import "slick-carousel/slick/slick-theme.scss";
+  .slick-loading,
+  .slick-loading .slick-list {
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
+  }
+  
+  #imgs-tab-slick2.my-slick {
+    .slick-arrow {
+      margin-top: -50px;
+    }
+    .slick-item {
+      height: 100%;
+      &>a {
+        height: 220px;
+      }
+    }
+    .slick-dots {
+      bottom: 105px;
+    }
+  }
+  
+  .my-slick {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+    .slick-list {
+      width: 100%;
+      height: 100%;
+    }
+    &.slick-dotted.slick-slider {
+      margin-bottom: 0;
+    }
+    .slick-item {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      &>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      z-index: 2;
+      height: 84px;
+      width: 34px;
+      &:hover {
+        background: rgba(0, 0, 0, .5);
+        &:before,
+        &:after {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+      &:before,
+      &:after {
+        font-size: 34px;
+        color: rgba(255, 255, 255, .5);
+      }
+    }
+    .slick-prev {
+      left: 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .slick-next {
+      right: 0;
+      border-radius: 4px 0 0 4px;
+    }
+    .slick-dots {
+      bottom: 10px;
+      li {
+        margin: 0;
+        button:before {
+          font-size: 40px;
+          opacity: 0.5;
+          color: #fff;
+        }
+        &.slick-active {
+          button:before {
+            color: $brand-warning;
+            opacity: 1;
+          }
+        }
+      }
+      li.slick-active button:before {}
+    }
+    .carousel-control {
+      width: 20px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      top: 125px;
+      // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000);
+      background: rgba(0, 0, 0, 0.8);
+      &.left {
+        border-radius: 0 4px 4px 0;
+      }
+      &.right {
+        border-radius: 4px 0 0 4px;
+      }
+    }
+    .carousel-indicators {
+      bottom: 15px;
+      li {
+        border: 0;
+        background-color: #fff;
+        margin: 1px 2px;
+        &.active {
+          width: 10px;
+          height: 10px;
+          background-color: $brand-warning;
+        }
+      }
+    }
+  }
+
+  #zx-home-slick{
+    &.my-slick{
+      .slick-item{
+        height:286px;
+        p{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: rgba(0, 7, 32,.6);
+          width: 100%;
+          height: 48px;
+          line-height: 48px;
+          font-size: 16px;
+          color: #fff;
+          padding-left: 15px;
+          padding-right: 105px;
+          overflow:hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .slick-dots{
+        text-align:right;
+        padding-right: 15px;
+        li{
+          button{
+            &:before{
+              font-size: 20px;
+              opacity:.5;
+              color:#fff;
+            }
+          }
+          &.slick-active button:before{
+            opacity: 1;
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-dotted.slick-slider {
+      margin-bottom: 0;
+    }

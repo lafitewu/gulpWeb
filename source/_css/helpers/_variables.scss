@@ -1,0 +1,43 @@
+//bootstrap variables section
+
+$brand-primary: #58C5A7;
+$brand-success: #48bd1c;
+$brand-info: #57A5FF;
+$brand-warning: #ff9f00;
+$brand-danger: #e30200;
+$state-success-text: $brand-success;
+$state-warning-text: $brand-warning;
+$state-info-text: $brand-info;
+$state-danger-text: $brand-danger;
+
+$btn-success-bg: $brand-success;
+
+//vendor libs variables section
+$font-family-icon: "iconfont";
+$fa-var-check: "\e061";
+$check-icon: $fa-var-check;
+
+// lightgallery plugin
+// paths
+$lg-path-fonts: '../fonts/lightgallery/';
+$lg-path-images: '../images/lightgallery/';
+
+//slick-carousel setting
+
+$slick-font-path: "../fonts/";
+$slick-font-family: "iconfont";
+$slick-loader-path: "./images";
+$slick-prev-character: "\e62f";
+$slick-next-character: "\e634";
+
+// z-index
+$zindex-outer: 1070;
+$zindex-progressbar: 1100;
+$zindex-controls: 1100;
+$zindex-toolbar: 1100;
+$zindex-subhtml: 1100;
+$zindex-thumbnail: 1100;
+$zindex-pager: 1100;
+$zindex-playbutton: 1100;
+$zindex-item: 1100;
+$zindex-backdrop: 1060;
